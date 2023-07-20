@@ -27,47 +27,51 @@ else {
 
     <header class="header">
         
-        <nav class="navbar">
+    <nav class="navbar">
+
        
-            <div class="logo">ZEBLA <span>GO</span> </div>  <!-- LOGO -->
+<div class="logo">Clean<span>Com</span> </div>  <!-- LOGO -->
 
-            <!-- NAVIGATION MENU -->
-            <ul class="nav-links">
 
-                <!-- NAVIGATION MENUS -->
-                <div class="menu">
 
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About</a></li>
-                    
-                    <li class="services">
+  <!-- NAVIGATION MENU -->
+  <ul class="nav-links">
 
-                    <a href="events.php">Events</a>
+  <!-- NAVIGATION MENUS -->
+  <div class="menu">
 
-                    <!-- DROPDOWN MENU -->
-                    <ul class="dropdown">
-                        <li><a href="events.php#your-events">Your events</a></li>
-                        <li><a href="events.php#all-events">All events</a></li>
-                        <li><a href="events.php#map">Map</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          
+          <li class="services">
 
-                    </ul>
+            <a href="events.php">Events</a>
 
-                    </li> 
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
 
-                    <li><a href="leaderboard.php">Leaderboard</a></li>
-                    <li><a href="contact_us.php">Contact</a></li>
-                    <li class="login_btn"><a href="<?php echo $profile_link; ?>" class="btn"><?php echo $profile_text; ?></a></li>
-                
-                </div>
+              <li><a href="events.php#your-events">Your events</a></li>
+              <li><a href="events.php#all-events">All events</a></li>
+              <li><a href="events.php#map">Map</a></li>
+              <li><a href="events.php#Create">Create Event</a></li>
+
             </ul>
 
-        </nav>
+          </li> 
+
+          <li><a href="leaderboard.php">Leaderboard</a></li>
+          <li><a href="contact_us.php">Contact</a></li>
+          <li class="login_btn"><a href="<?php echo $profile_link; ?>" class="btn"><?php echo $profile_text; ?></a></li>
+        
+      </div>
+    </ul>
+</nav>
 
     </header>
 
     <div class="leaderboard-container">
 
-        <div class="title-leaderboard"><h1>See our winners !</h1></div>
+        <div class="title-leaderboard"><h1>Leaderboard Overall</h1></div>
 
         <br>
 
@@ -92,15 +96,13 @@ else {
             <?php make_leaderboard(20,"overall");?>
             </table>
 
-            
-
-            <div id="buttons">
-            <button class="continue"> <a href="Leaderboard.php"> See all the leaderboard</a></button>
-            </div> 
+          
         </div>
 
             </main>
 
     </div>
+
+
 
 </body>

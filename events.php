@@ -19,6 +19,9 @@
           $profile_text = 'Login';
         }
         $pins = get_artical_pin();
+
+        
+
 ?>
 
 <html lang="en">
@@ -56,41 +59,44 @@
 
 <header class="header">
         
-  <nav class="navbar">
+<nav class="navbar">
+
        
-       <div class="logo">ZEBLA <span>GO</span> </div>  <!-- LOGO -->
- 
-         <!-- NAVIGATION MENU -->
-         <ul class="nav-links">
- 
-         <!-- NAVIGATION MENUS -->
-         <div class="menu">
- 
-                 <li><a href="index.php">Home</a></li>
-                 <li><a href="about.php">About</a></li>
-                 
-                 <li class="services">
- 
-                   <a href="events.php">Events</a>
- 
-                   <!-- DROPDOWN MENU -->
-                   <ul class="dropdown">
-                     <li><a href="/">Dropdown 1</a></li>
-                     <li><a href="/">Dropdown 2</a></li>
-                     <li><a href="/">Dropdown 2</a></li>
-                     <li><a href="/">Dropdown 3</a></li>
-                     <li><a href="/">Dropdown 4</a></li>
-                   </ul>
-                   
-                 </li> 
- 
-                 <li><a href="events.php">Leaderboard</a></li>
-                 <li><a href="contact_us.php">Contact</a></li>
-                 <li class="login_btn"><a href="<?php echo $profile_link; ?>" class="btn"><?php echo $profile_text; ?></a></li>
-               
-             </div>
-           </ul>
-  </nav>
+<div class="logo">Clean<span>Com</span> </div>  <!-- LOGO -->
+
+
+
+  <!-- NAVIGATION MENU -->
+  <ul class="nav-links">
+
+  <!-- NAVIGATION MENUS -->
+  <div class="menu">
+
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          
+          <li class="services">
+
+            <a href="events.php">Events</a>
+
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="events.php#your-events">Your events</a></li>
+              <li><a href="events.php#all-events">All events</a></li>
+              <li><a href="events.php#map">Map</a></li>
+              <li><a href="events.php#Create">Create Event</a></li>
+
+            </ul>
+
+          </li> 
+
+          <li><a href="leaderboard.php">Leaderboard</a></li>
+          <li><a href="contact_us.php">Contact</a></li>
+          <li class="login_btn"><a href="<?php echo $profile_link; ?>" class="btn"><?php echo $profile_text; ?></a></li>
+        
+      </div>
+    </ul>
+</nav>
 
   <div class="about-section">
       <h1>Events</h1>
@@ -98,9 +104,15 @@
 
 </header>
 
-<br><br><br>
+<br><br>
 
-<div id="map"></div>
+<div class="title-before-events">
+
+<a name="your-events"><h1>Your Events</h1></a>
+
+</div>
+
+<br>
 
 <div class = Varticallist>
   <button class="btn left"><i class="fas fa-arrow-left"></i></button>
@@ -109,6 +121,14 @@
 </div>
 
 <br><br><br>
+
+<div class="title-before-events">
+
+<a name="all-events"><h1>All the events</h1></a>
+
+</div>
+
+<br>
 	
   <form class="search-container" action="backend\search.php" method="post">
 
@@ -132,6 +152,35 @@
             echo get_all_articals();
         } ?>
     </div>
+
+
+
+    <br><br>
+      
+      <div class="title-before-events">
+
+      <a name="map"><h1>Map of all the events</h1></a>
+
+      </div>
+
+      <br><br>
+
+      <div id="map"></div>
+
+      <br><br>
+
+      <div class="title-before-events">
+
+      <a name="Create"><h1>Create your own event</h1></a>
+
+      </div>
+
+      <br><br>
+
+      <center><a href="CreateEvent.php" class="button_create">Organize a new event here!</a></center>
+<br>
+
+
 
     <br><br><br>
 
@@ -176,7 +225,6 @@
           </div>
 
       </div>
-
 
 
 

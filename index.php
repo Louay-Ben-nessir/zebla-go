@@ -19,16 +19,22 @@ else {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Zebla GO</title>
 </head>
 
 <body>
 
   <header class="header">
+
         
     <nav class="navbar">
+
        
-      <div class="logo">ZEBLA <span>GO</span> </div>  <!-- LOGO -->
+      <div class="logo">Clean<span>Com</span> </div>  <!-- LOGO -->
+
+      
 
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
@@ -45,9 +51,11 @@ else {
 
                   <!-- DROPDOWN MENU -->
                   <ul class="dropdown">
-                    <li><a href="events.php#your-events">Your events</a></li>
-                    <li><a href="events.php#all-events">All events</a></li>
-                    <li><a href="events.php#map">Map</a></li>
+
+              <li><a href="events.php#your-events">Your events</a></li>
+              <li><a href="events.php#all-events">All events</a></li>
+              <li><a href="events.php#map">Map</a></li>
+              <li><a href="events.php#Create">Create Event</a></li>
 
                   </ul>
 
@@ -60,15 +68,8 @@ else {
             </div>
           </ul>
       </nav>
-
-          <!-- <div>
-                  <h1> <span>“Never doubt that a small group of thoughtful, 
-                  <br> committed citizens can change the world;
-                  <br> indeed, it is the only thing that ever has.”</span> 
-                  <br> —Margaret Mead </h1>
-          </div> -->
         
-      <div class="about-section">
+      <div class="presentation-section">
       
         <h1> 
           Our small actions can change the world
@@ -79,18 +80,18 @@ else {
 
     </header>
 
-    <br><br>
+    <br><br><br>
 
     
     <div class="photo-list">
 
       <div class="photos">
 
-        <img src="img/delice.jpg">
-        <img src="img/delice.jpg">
-        <img src="img/delice.jpg">
-        <img src="img/delice.jpg">
-        <img src="img/delice.jpg">
+        <img src="img/wwf.svg">
+        <img src="img/Friends_of_the_Earth.png">
+        <img src="img/croissant rouge.png">
+        <img src="img/APEDSM.jpg">
+        <img src="img/Tunisie Ecologie.jpg">
 
       </div>
 
@@ -105,10 +106,6 @@ else {
       <div class="heading">
 
         <h1>About Us</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-           Aperiam eveniet deserunt repudiandae in alias et?
-        </p>
-
 
       </div> 
 
@@ -120,14 +117,18 @@ else {
 
           <div class="about-content">
 
-            <h2>Lorem ipsum dolor sit amet.</h2> 
+            <h2>What is CleanCom</h2> 
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Qui facere, doloribus mollitia inventore, voluptatum sunt 
-              assumenda cumque optio tempore doloremque perferendis impedit?
+            <p>This project aims to centralize the scattered community cleansing efforts and
+              events in one convenient platform. It brings communities together and motivates
+              individuals to contribute to something bigger than themself all while earning
+              rewards for their actions and helping clean their community and improve their
+              well-being.
             </p>
 
-            <a href="about.php" class="read-more">Read More</a>
+            <br>
+
+            <a href="about.php" class="read-more">Learn more about us</a>
 
           </div>
 
@@ -148,7 +149,7 @@ else {
 
     <div class="leaderboard-container">
 
-      <div class="title-leaderboard"><h1>See our winners !</h1></div>
+      <div class="title-leaderboard"><h1>Top 5 of this month</h1></div>
 
       <br>
 

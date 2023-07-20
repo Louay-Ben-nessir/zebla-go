@@ -37,6 +37,8 @@ $calc_dist = ($event_status == 2 ? 0:1);
 </head>
 <body>
     <header>
+
+    
        
        <h3> <?=$event_name;?> </h3>
        <div class="line"></div>
@@ -49,7 +51,7 @@ $calc_dist = ($event_status == 2 ? 0:1);
         <?php 
             handel_messges();
             if (!is_user_event($_SESSION['user_id'], $event["event_id"]) && $event_status != 2){
-            $count_down = $event["start_date"];
+            $count_down = $event["start_date"]; 
             echo '<form action="backend\join_event.php" method="post">          
                       <input type="submit" value="Join event!" class="btn">
                       <input type="hidden" name="event_name" value='.$event_name.'>
@@ -61,7 +63,7 @@ $calc_dist = ($event_status == 2 ? 0:1);
 
                 echo '<form action="backend\join_event.php" method="post">          
                 <input type="submit" value="leave event" class="leave_btn btn">
-                <input type="hidden" name="event_name" value='.$event_name.'>
+                
                 <input type="hidden" name="event_id" value='.$event["event_id"].'>
                 <input type="hidden" name="action" value=1>
               </form>';
@@ -72,6 +74,7 @@ $calc_dist = ($event_status == 2 ? 0:1);
                 <input type="file" name="image1" id="image1">
                 <label for="image2" class="upload-btn">Select image</label>
                 <input type="file" name="image2" id="image2">
+                <input type="hidden" name="user" value='.$event_name.'>
                 <input type="hidden" name="event_name" value='.$event_name.'>
                 <input type="submit" name="submit" value="Upload" class="submit-btn">
               </form>';
@@ -123,22 +126,18 @@ $calc_dist = ($event_status == 2 ? 0:1);
         <div id="clean_env">
             <img src="img\earth.png">
             <h3>clean environment</h3>
-            <h6>Lorem ipsum dolor sit, Consectetur quia quaerat animi quasi corporis asperiores tempore dolor iusto repellendus vel</h6>
         </div>
         <div id="community">
             <img src="img\Community.png">
             <h3>boost sense of community</h3>
-            <h6>Lorem ipsum dolor sit, Consectetur quia quaerat animi quasi corporis asperiores tempore dolor iusto repellendus vel</h6>
         </div>
         <div id="awareness">
             <img src="img\think-green.png">
             <h3>Spread awareness</h3>
-            <h6>Lorem ipsum dolor sit, Consectetur quia quaerat animi quasi corporis asperiores tempore dolor iusto repellendus vel</h6>
         </div>
         <div id="have_fun">
             <img src="img\have_fun.png">
             <h3>Have fun</h3>
-            <h6>Lorem ipsum dolor sit, Consectetur quia quaerat animi quasi corporis asperiores tempore dolor iusto repellendus vel</h6>
         </div>
     </section>     
     

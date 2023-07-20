@@ -30,7 +30,7 @@ else {
         
 <nav class="navbar">
        
-       <div class="logo">ZEBLA <span>GO</span> </div>  <!-- LOGO -->
+       <div class="logo">Clean<span>Com</span> </div>  <!-- LOGO -->
  
          <!-- NAVIGATION MENU -->
          <ul class="nav-links">
@@ -46,10 +46,12 @@ else {
                    <a href="events.php">Events</a>
  
                    <!-- DROPDOWN MENU -->
+
                    <ul class="dropdown">
-                      <li><a href="events.php#your-events">Your events</a></li>
-                      <li><a href="events.php#all-events">All events</a></li>
-                      <li><a href="events.php#map">Map</a></li>
+              <li><a href="events.php#your-events">Your events</a></li>
+              <li><a href="events.php#all-events">All events</a></li>
+              <li><a href="events.php#map">Map</a></li>
+              <li><a href="events.php#Create">Create Event</a></li>
                    </ul>
                    
                  </li> 
