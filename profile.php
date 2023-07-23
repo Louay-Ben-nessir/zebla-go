@@ -5,6 +5,7 @@
 
         $user = curr_user_info()
 
+        
 ?>
 
 <script>
@@ -38,7 +39,52 @@ function openTab(evt, TabName) {
     <title>Zebla GO</title>
 </head>
 <body>
-<header></header>
+<header>
+
+<nav class="navbar">
+
+       
+<div class="logo">Clean<span>Com</span> </div>  <!-- LOGO -->
+
+
+
+  <!-- NAVIGATION MENU -->
+  <ul class="nav-links">
+
+  <!-- NAVIGATION MENUS -->
+  <div class="menu">
+
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          
+          <li class="services">
+
+            <a href="events.php">Events</a>
+
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+            <li><a href="events.php#your-events">Your events</a></li>
+              <li><a href="events.php#all-events">All events</a></li>
+              <li><a href="events.php#map">Map</a></li>
+              <li><a href="events.php#Create">Create Event</a></li>
+
+            </ul>
+
+          </li> 
+
+          <li><a href="leaderboard.php">Leaderboard</a></li>
+          <li><a href="contact_us.php">Contact</a></li>
+          
+        
+      </div>
+    </ul>
+</nav>
+
+
+
+
+
+</header>
 
 <div class="parent">
 
@@ -94,7 +140,7 @@ function openTab(evt, TabName) {
   <label for="bio">Bio:</label>
   <textarea id="bio" name="bio"></textarea>
 
-  <label class="upload-btn">Uplaod profile image</label>
+  <label class="upload-btn" for="pfp_image">Uplaod profile image</label>
   <input type="file" id="pfp_image" name="pfp_image" ></br>
 
   <button type="submit">Submit</button>
@@ -135,6 +181,21 @@ function openTab(evt, TabName) {
 </div>
 
 </body>
+<script>
+            const imageInputs = document.querySelectorAll('input[type="file"]');
+            const uploadBtns = document.querySelectorAll('.upload-btn');
 
+            imageInputs.forEach((input, index) => {
+              input.addEventListener('change', () => {
+                if (input.value) {
+                  uploadBtns[index].classList.add('selected');
+                  uploadBtns[index].textContent = 'Image selected';
+                } else {
+                  uploadBtns[index].classList.remove('selected');
+                  uploadBtns[index].textContent = 'Select image';
+                }
+              });
+            });
+</script>
 <script>document.getElementById("default").click();</script>
 </html>

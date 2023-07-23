@@ -31,7 +31,7 @@ else {
 
     <nav class="navbar">
        
-      <div class="logo">ZEBLA <span>GO</span> </div>  <!-- LOGO -->
+      <div class="logo">Clean<span>Com</span> </div>  <!-- LOGO -->
  
          <!-- NAVIGATION MENU -->
       <ul class="nav-links">
@@ -49,9 +49,10 @@ else {
             <!-- DROPDOWN MENU -->
             <ul class="dropdown">
 
-            <li><a href="events.php#your-events">Your events</a></li>
-                    <li><a href="events.php#all-events">All events</a></li>
-                    <li><a href="events.php#map">Map</a></li>
+              <li><a href="events.php#your-events">Your events</a></li>
+              <li><a href="events.php#all-events">All events</a></li>
+              <li><a href="events.php#map">Map</a></li>
+              <li><a href="events.php#Create">Create Event</a></li>
 
             </ul>
                    
@@ -70,30 +71,32 @@ else {
       <h1>About Us</h1>
     </div>
 
-</header>
+  </header>
 
+  <br><br><br>
 
+  <h2 style="text-align:center">What is Zebla GO ?</h2>
 
+  <br><br>
 
-    <br><br><br>
+  <div class="paragraph_container">
 
-    <h2 style="text-align:center">What is Zebla GO ?</h2>
-
-    <div class="paragraph_container">
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Sed in mi vitae dolor euismod suscipit. Suspendisse sit amet ex ligula. 
-        Nulla facilisi. Fusce vel tincidunt odio. Aliquam blandit, libero ut porttitor tristique,
-         ex sapien tincidunt orci, ut convallis purus eros at metus.
+      <p>This project aims to centralize the scattered community cleansing efforts and
+        events in one convenient platform. It brings communities together and motivates
+        individuals to contribute to something bigger than themself all while earning
+        rewards for their actions and helping clean their community and improve their
+        well-being.
       </p>
 
-    </div>
+  </div>
 
-    <br><br><br>
+  <br><br><br>
 
-    <h2 style="text-align:center">Our Team</h2>
+  <h2 style="text-align:center">Our Team</h2>
 
-    <div class="row">
+  <br><br>
+
+  <div class="row">
 
       <div class="column">
 
@@ -102,11 +105,12 @@ else {
           <img src="/img/shrek.jpg" alt="Omar">
 
           <div class="container">
-
+            
+            <br>
             <h2>Omar Mbarki</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
+            <p class="title">Manager</p>
+            <p>Managing group work</p>
+            <p>omar_mbarki@gmail.com</p>
 
             <br>
             
@@ -116,6 +120,7 @@ else {
 
       </div>
     
+    
       <div class="column">
 
         <div class="card">
@@ -124,10 +129,11 @@ else {
 
           <div class="container">
 
+            <br>
             <h2>Louay Ben Nessir</h2>
             <p class="title">Machine learning Director</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>mike@example.com</p>  
+            <p>Machine learning and backend developer</p>
+            <p>louay_ben_nessir@google.com</p>  
             
             <br>
 
@@ -144,11 +150,12 @@ else {
           <img src="/img/palmier.jpg" alt="Nour" >
           
           <div class="container">
-
+            
+            <br>
             <h2>Nour Bouajina</h2>
             <p class="title">Designer</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>john@example.com</p>
+            <p>Html and CSS developer</p>
+            <p>nour_bouajina@google.com</p>
 
             <br>
           
@@ -159,38 +166,6 @@ else {
       </div>
 
     </div>
-
-
-
-    <!-- <section class="why_join">
-
-      <div id="clean_env">
-        <img src="img\earth.png">
-        <h3>clean environment</h3>
-        
-      </div>
-
-      <div id="community">
-          <img src="img\Community.png">
-          <h3>boost sense of community</h3>
-          
-      </div>
-
-      <div id="awareness">
-        
-          <img src="img\think-green.png">
-          <h3>Spread awareness</h3>
-          
-      </div>
-
-      <div id="have_fun">
-
-          <img src="img\have_fun.png">
-          <h3>Have fun</h3>
-          
-      </div>
-
-    </section>  -->
 
 
 
